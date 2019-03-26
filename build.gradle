@@ -1,0 +1,18 @@
+group 'simplesolution.dev'
+version '1.0.0'
+
+apply plugin: 'java'
+apply plugin: 'application'
+
+mainClassName = "simplesolution.dev.UsingApachePOIWithExcelSample"
+
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    compile group: 'org.apache.poi', name: 'poi', version: '4.0.1'
+    compile group: 'org.apache.poi', name: 'poi-ooxml', version: '4.0.1'
+}
